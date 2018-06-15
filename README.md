@@ -8,3 +8,9 @@ When this buildpack is present in your Cloud Foundry deployment, all you will ha
 instances of your application with the Eureka discovery server is bind the application to your Spring Cloud
 Eureka Servive instance. Instances will then automatically be registered and continue to send heartbeats
 as long as the application container is alive.
+
+See https://docs.cloudfoundry.org/buildpacks/understand-buildpacks.html for buildpack basics.  This is an 
+intermediate buildpack using only the bin/supply script.
+
+See https://docs.cloudfoundry.org/buildpacks/use-multiple-buildpacks.html#Specifying%20Buildpacks%20with%20the%20cf%20CLI
+for information about pushing an application with multiple buildpacks.
