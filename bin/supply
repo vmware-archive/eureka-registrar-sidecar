@@ -29,13 +29,10 @@ INDEX_DIR=$4
 cp $ROOT_DIR/lib/eureka_registrar.py $DEPS_DIR/$INDEX_DIR
 
 # startup script goes into <deps>/<index>/profile.d
-# final build pack *should* copy it into $HOME/profile.d 
+# final build pack *should* copy it into $HOME/profile.d for
+# execution upon container startup
 
 mkdir -p $DEPS_DIR/$INDEX_DIR/profile.d
-
-# replace %APP_DIR% in startup script with path to 
-# python file copied into deps/<index>
-
-sed "s/%APP_DIR%/~\/deps\/$INDEX_DIR/g" $ROOT_DIR/lib/eureka_registrar.sh > $DEPS_DIR/$INDEX_DIR/profile.d/eureka_registrar.sh
+cp $ROOT_DIR/lib/eureka_registrar.sh $DEPS_DIR/$INDEX_DIR/profile.d/eureka_registrar.sh
 chmod +x $DEPS_DIR/$INDEX_DIR/profile.d/eureka_registrar.sh
 

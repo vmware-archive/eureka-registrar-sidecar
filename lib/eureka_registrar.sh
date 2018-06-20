@@ -18,8 +18,7 @@
 
 echo "starting eureka_registrar"
 
-# supply buildpacks should leave artifacts in deps/index
-# %APP_DIR% gets replaced by bin/supply script when
-# this file gets installed
+# when the profile.d scripts are run, DEPS_DIR and INSTANCE_INDEX
+# can be used to locate dependencies installed by bin/supply
 
-python %APP_DIR%/eureka_registrar.py &
+python $DEPS_DIR/$INSTANCE_INDEX/eureka_registrar.py &

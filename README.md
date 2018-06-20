@@ -12,7 +12,7 @@ buildpack when pushing your application.
 
 ```sh
 foo@bar:my-app$ cf push my-app --no-start
-foo@bar:my-app$ cf v3-push my-app -p <path/to/bundle> -b eureka_registrary_sidecar -b <final_buildpack>
+foo@bar:my-app$ cf v3-push my-app -b eureka_registrary_sidecar -b <final_buildpack>
 
 ```
 
