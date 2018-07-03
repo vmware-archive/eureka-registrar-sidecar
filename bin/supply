@@ -33,6 +33,6 @@ cp $ROOT_DIR/lib/eureka_registrar.py $DEPS_DIR/$INDEX_DIR
 # execution upon container startup
 
 mkdir -p $DEPS_DIR/$INDEX_DIR/profile.d
-cp $ROOT_DIR/lib/eureka_registrar.sh $DEPS_DIR/$INDEX_DIR/profile.d/eureka_registrar.sh
+cp $ROOT_DIR/lib/eureka_registrar.sh $DEPS_DIR/$INDEX_DIR/profile.d
 chmod +x $DEPS_DIR/$INDEX_DIR/profile.d/eureka_registrar.sh
 

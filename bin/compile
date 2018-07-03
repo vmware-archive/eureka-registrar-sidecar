@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# bin/decorate <build-dir>
 
-# eureka-registrar-decorator
+# eureka-registrar-sidecar
 #
 # Copyright (c) 2017-Present Pivotal Software, Inc. All Rights Reserved.
 #

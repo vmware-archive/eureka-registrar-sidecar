@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# eureka-registrar-decorator
+# eureka-registrar-sidecar
 #
 # Copyright (c) 2018-Present Pivotal Software, Inc. All Rights Reserved.
 #
