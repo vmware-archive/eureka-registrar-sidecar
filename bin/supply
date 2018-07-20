@@ -34,5 +34,6 @@ cp $ROOT_DIR/lib/eureka_registrar.py $DEPS_DIR/$INDEX_DIR
 
 mkdir -p $DEPS_DIR/$INDEX_DIR/profile.d
 cp $ROOT_DIR/lib/eureka_registrar.sh $DEPS_DIR/$INDEX_DIR/profile.d
+sed "s/__BUILDPACK_INDEX__/$INDEX_DIR/g" $DEPS_DIR/$INDEX_DIR/profile.d/eureka_registrar.sh -i
 chmod +x $DEPS_DIR/$INDEX_DIR/profile.d/eureka_registrar.sh
 

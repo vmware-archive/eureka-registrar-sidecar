@@ -18,7 +18,9 @@
 
 echo "starting eureka_registrar"
 
-# when the profile.d scripts are run, DEPS_DIR and INSTANCE_INDEX
+# when the profile.d scripts are run, DEPS_DIR
 # can be used to locate dependencies installed by bin/supply
 
-python $DEPS_DIR/$INSTANCE_INDEX/eureka_registrar.py &
+#__BUILDPACK_INDEX__ gets replaced by bin/supply at cf push
+
+python $DEPS_DIR/__BUILDPACK_INDEX__/eureka_registrar.py &
