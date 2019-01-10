@@ -192,8 +192,10 @@ def register_service(service, appinfo):
 	except urllib2.HTTPError as e:
 		if e.code != 204:
 			print >> sys.stderr, json.dumps(data, indent=4)
-			print >> sys.stderr, response.status_code
-			print >> sys.stderr, response.text
+			print >> sys.stderr, e.code
+			print >> sys.stderr, e.read()
+			print >> sys.stderr, uri
+
 			raise
 	if log_level > 1:
 		print 'Successfully registered service'
