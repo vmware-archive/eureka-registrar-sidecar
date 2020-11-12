@@ -1,3 +1,5 @@
+# eureka-registrar-sidecar is no longer actively maintained by VMware.
+
 # Eureka Registrar Buildpack
 
 This is a intermediate buildpack for Cloud Foundry that provides integration with the Spring Cloud Eureka 
